@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-24T21:30:10 PKT" name="Default suite" finished-at="2021-01-24T21:30:52 PKT" duration-ms="42126">
+    <groups>
+    </groups>
+    <test started-at="2021-01-24T21:30:10 PKT" name="Default test" finished-at="2021-01-24T21:30:52 PKT" duration-ms="42126">
+      <class name="seleniumframewrok.SeleniumFramewrok6TestNGListener">
+        <test-method is-config="true" signature="onceruncode()[pri:0, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:09 PKT" name="onceruncode" finished-at="2021-01-24T21:30:10 PKT" duration-ms="1105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onceruncode -->
+        <test-method is-config="true" signature="creatingobj()[pri:0, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:10 PKT" name="creatingobj" finished-at="2021-01-24T21:30:20 PKT" duration-ms="9631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingobj -->
+        <test-method signature="Test1()[pri:-1, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:20 PKT" name="Test1" finished-at="2021-01-24T21:30:36 PKT" duration-ms="15960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:36 PKT" name="Test2" finished-at="2021-01-24T21:30:40 PKT" duration-ms="4642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:1, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:40 PKT" name="Test3" finished-at="2021-01-24T21:30:46 PKT" duration-ms="5987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="endftest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:46 PKT" name="endftest" finished-at="2021-01-24T21:30:52 PKT" duration-ms="5785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endftest -->
+        <test-method is-config="true" signature="onceruncodeafter()[pri:0, instance:seleniumframewrok.SeleniumFramewrok6TestNGListener@4d1c00d0]" started-at="2021-01-24T21:30:52 PKT" name="onceruncodeafter" finished-at="2021-01-24T21:30:56 PKT" duration-ms="4043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onceruncodeafter -->
+      </class> <!-- seleniumframewrok.SeleniumFramewrok6TestNGListener -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
