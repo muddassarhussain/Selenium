@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumframewrok.SeleniumFramewrok5TestNGPlusExtentReports">
+      <class name="seleniumframewrok.SeleniumFramewrok8TestNGMultiBrowsers">
         <methods>
-          <include name="orgtest"/>
-          <include name="creatingobj"/>
+          <include name="Test1"/>
           <include name="endftest"/>
           <include name="onceruncodeafter"/>
           <include name="onceruncode"/>
+          <include name="creatingobj"/>
         </methods>
-      </class> <!-- seleniumframewrok.SeleniumFramewrok5TestNGPlusExtentReports -->
+      </class> <!-- seleniumframewrok.SeleniumFramewrok8TestNGMultiBrowsers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
