@@ -107,8 +107,8 @@ public class SeleniumFramewrok10TestNGParameters{
 		public void endftest() throws InterruptedException {
 			Thread.sleep(5000);
 			chrome.close();
-			Thread.sleep(5000);
-			firefox.close();
+//			Thread.sleep(5000);
+//			firefox.close();
 			test.pass("Closed the browser");
 			
 			test.info("Test completed successfully");
