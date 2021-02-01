@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+=======
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-01-28T23:05:40 PKT" name="Suite" finished-at="2021-01-28T23:05:40 PKT" duration-ms="249">
+=======
+  <suite started-at="2021-02-01T18:55:37 PKT" name="Default suite" finished-at="2021-02-01T18:56:03 PKT" duration-ms="25962">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
     <groups>
       <group name="smoke">
         <method signature="SeleniumFramewrok9TestNGGroups.Test2()[pri:0, instance:seleniumframewrok.SeleniumFramewrok9TestNGGroups@185a6e9]" name="Test2" class="seleniumframewrok.SeleniumFramewrok9TestNGGroups"/>
@@ -11,13 +19,38 @@
         <method signature="SeleniumFramewrok9TestNGGroups.Test2()[pri:0, instance:seleniumframewrok.SeleniumFramewrok9TestNGGroups@185a6e9]" name="Test2" class="seleniumframewrok.SeleniumFramewrok9TestNGGroups"/>
       </group> <!-- sanity -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-01-28T23:05:40 PKT" name="Test" finished-at="2021-01-28T23:05:40 PKT" duration-ms="249">
       <class name="seleniumframewrok.SeleniumFramewrok9TestNGGroups">
         <test-method signature="Test2()[pri:0, instance:seleniumframewrok.SeleniumFramewrok9TestNGGroups@185a6e9]" started-at="2021-01-28T23:05:40 PKT" name="Test2" finished-at="2021-01-28T23:05:40 PKT" duration-ms="41" status="PASS">
+=======
+    <test started-at="2021-02-01T18:55:37 PKT" name="Default test" finished-at="2021-02-01T18:56:03 PKT" duration-ms="25962">
+      <class name="seleniumframewrok.SeleniumFramewrok12TestNGIgnore">
+        <test-method is-config="true" signature="creatingobj()[pri:0, instance:seleniumframewrok.SeleniumFramewrok12TestNGIgnore@6ed3ccb2]" started-at="2021-02-01T18:55:37 PKT" name="creatingobj" finished-at="2021-02-01T18:55:39 PKT" duration-ms="2226" status="PASS">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- Test2 -->
       </class> <!-- seleniumframewrok.SeleniumFramewrok9TestNGGroups -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+        </test-method> <!-- creatingobj -->
+        <test-method signature="Test3()[pri:0, instance:seleniumframewrok.SeleniumFramewrok12TestNGIgnore@6ed3ccb2]" started-at="2021-02-01T18:55:39 PKT" name="Test3" finished-at="2021-02-01T18:55:50 PKT" duration-ms="11094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method signature="Test2()[pri:2, instance:seleniumframewrok.SeleniumFramewrok12TestNGIgnore@6ed3ccb2]" started-at="2021-02-01T18:55:50 PKT" name="Test2" finished-at="2021-02-01T18:55:54 PKT" duration-ms="3536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method is-config="true" signature="endftest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok12TestNGIgnore@6ed3ccb2]" started-at="2021-02-01T18:55:54 PKT" name="endftest" finished-at="2021-02-01T18:56:03 PKT" duration-ms="9077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endftest -->
+      </class> <!-- seleniumframewrok.SeleniumFramewrok12TestNGIgnore -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
 </testng-results>

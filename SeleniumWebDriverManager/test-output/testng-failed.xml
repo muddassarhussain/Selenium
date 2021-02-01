@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <groups>
@@ -7,12 +8,36 @@
         <include name="sanity"/>
       </run>
     </groups>
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
     <classes>
+<<<<<<< HEAD
       <class name="seleniumframewrok.SeleniumFramewrok9TestNGGroups">
+=======
+      <class name="seleniumframewrok.SeleniumFramewrok11TestNGDependenciesGroups">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
         <methods>
+<<<<<<< HEAD
           <include name="Test2"/>
+=======
+          <include name="Test1"/>
+          <include name="Test3"/>
+          <include name="endftest"/>
+          <include name="creatingobj"/>
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- seleniumframewrok.SeleniumFramewrok9TestNGGroups -->
+=======
+      </class> <!-- seleniumframewrok.SeleniumFramewrok11TestNGDependenciesGroups -->
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
