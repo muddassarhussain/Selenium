@@ -2,48 +2,35 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-02T20:03:27 PKT" name="Default suite" finished-at="2021-02-02T20:03:55 PKT" duration-ms="28406">
+  <suite started-at="2021-02-02T22:22:59 PKT" name="Default suite" finished-at="2021-02-02T22:24:50 PKT" duration-ms="110898">
     <groups>
     </groups>
-    <test started-at="2021-02-02T20:03:27 PKT" name="Default test" finished-at="2021-02-02T20:03:55 PKT" duration-ms="28406">
+    <test started-at="2021-02-02T22:22:59 PKT" name="Default test" finished-at="2021-02-02T22:24:50 PKT" duration-ms="110898">
       <class name="seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@3c9754d8]" started-at="2021-02-02T20:03:27 PKT" name="setUp" finished-at="2021-02-02T20:03:29 PKT" duration-ms="1959" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@4b2bac3f]" started-at="2021-02-02T22:22:59 PKT" name="setUp" finished-at="2021-02-02T22:23:24 PKT" duration-ms="25488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testTileMountainHomeToCheckout()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@3c9754d8]" started-at="2021-02-02T20:03:29 PKT" name="testTileMountainHomeToCheckout" finished-at="2021-02-02T20:03:50 PKT" duration-ms="20721" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="testTileMountainHomeToCheckout()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@4b2bac3f]" started-at="2021-02-02T22:23:25 PKT" name="testTileMountainHomeToCheckout" finished-at="2021-02-02T22:24:25 PKT" duration-ms="60060" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[element click intercepted: Element <label data-v-b0399c5a="" for="sendToShippingAddressCheckbox" class="pl35 lh30 h4 pointer">...</label> is not clickable at point (466, 10). Other element would receive the click: <div class="col-xs-2 col-md-12 center-xs" data-v-4dd8e47d="">...</div>
-  (Session info: chrome=88.0.4324.104)
+              <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'MUDDASSAR-HUSSA', ip: '192.168.1.121', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 46a71af1cf27ea0fae0ed62f5deda64d]]>
+System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\rocok\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12d606b3afa88fa6fda65aa1075b675d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label data-v-b0399c5a="" for="sendToShippingAddressCheckbox" class="pl35 lh30 h4 pointer">...</label> is not clickable at point (466, 10). Other element would receive the click: <div class="col-xs-2 col-md-12 center-xs" data-v-4dd8e47d="">...</div>
-  (Session info: chrome=88.0.4324.104)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'MUDDASSAR-HUSSA', ip: '192.168.1.121', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 46a71af1cf27ea0fae0ed62f5deda64d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-at seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain.testTileMountainHomeToCheckout(SeleniumFramewrok13TestNGRecorderTileMountain.java:56)
+System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\rocok\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 12d606b3afa88fa6fda65aa1075b675d
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:522)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+at seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain.testTileMountainHomeToCheckout(SeleniumFramewrok13TestNGRecorderTileMountain.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,13 +59,112 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:60)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+... 30 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:43587 after 60000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
+... 39 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:43587 after 60000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTileMountainHomeToCheckout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@3c9754d8]" started-at="2021-02-02T20:03:50 PKT" name="tearDown" finished-at="2021-02-02T20:03:55 PKT" duration-ms="5702" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@4b2bac3f]" started-at="2021-02-02T22:24:25 PKT" name="tearDown" finished-at="2021-02-02T22:24:50 PKT" duration-ms="25081" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to stop.
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromiumDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: ChromiumDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:116)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:398)
+at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:243)
+at seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain.tearDown(SeleniumFramewrok13TestNGRecorderTileMountain.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:112)
+... 32 more
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:130)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:106)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 20000 ms.
+at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
+... 8 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

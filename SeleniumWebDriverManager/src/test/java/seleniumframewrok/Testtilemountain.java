@@ -20,7 +20,7 @@ public class Testtilemountain{
   }
 
   @Test
-  public void testSeleniumFramewrok13TestNGRecorderTileMountain() throws Exception {
+  public void testTileMountainHomeToCheckout() throws Exception {
     driver.get("http://vue.bathroommountain.co.uk/");
     driver.findElement(By.xpath("//div[@id='home']/div[3]/div/div/a[2]/div/div")).click();
     driver.findElement(By.xpath("//img[contains(@src,'http://vue.bathroommountain.co.uk/img/400/400/resize/catalog/category/72021-L.jpg')]")).click();
