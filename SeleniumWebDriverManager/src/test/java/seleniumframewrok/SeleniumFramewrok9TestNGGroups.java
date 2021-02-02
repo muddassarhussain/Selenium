@@ -8,19 +8,19 @@ public class SeleniumFramewrok9TestNGGroups{
 
 	/*5th Automation Groups-TestNG Code Start Here*/
 
-	@Test(groups = {"smoke"})
+	@Testtilemountain(groups = {"smoke"})
 	public void Test1() {
 		System.out.println("Test one");
 	}
-	@Test(groups = {"smoke", "sanity"})
+	@Testtilemountain(groups = {"smoke", "sanity"})
 	public void Test2() {
 		System.out.println("Test one");
 	}
-	@Test(groups = {"smoke", "regression"})
+	@Testtilemountain(groups = {"smoke", "regression"})
 	public void Test3() {
 		System.out.println("Test one");
 	}
-	@Test(groups = {"smoke"})
+	@Testtilemountain(groups = {"smoke"})
 	public void Test4() {
 		System.out.println("Test one");
 	}

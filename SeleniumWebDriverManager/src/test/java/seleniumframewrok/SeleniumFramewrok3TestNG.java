@@ -53,7 +53,7 @@ public class SeleniumFramewrok3TestNG {
 		 */		
 		
 		public static String PageTitle;
-		@Test
+		@Testtilemountain
 		public void OriginalTest() {
 			chrome.get("https://www.google.com");
 		//	WebElement element = null;
@@ -62,7 +62,7 @@ public class SeleniumFramewrok3TestNG {
 			PageTitle = chrome.getTitle();
 		}
 		
-		@Test
+		@Testtilemountain
 		public void OriginalTest2() {
 			chrome.get("https://www.google.com");
 		//	WebElement element = null;

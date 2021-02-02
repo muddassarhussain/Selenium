@@ -63,7 +63,7 @@ public class SeleniumFramewrok8TestNGMultiBrowsers{
 		}
 		
 		@Parameters("BrowserName")
-		@Test(priority = -1)
+		@Testtilemountain(priority = -1)
 		public void Test1(String BrowserName) {
 			if(BrowserName.equalsIgnoreCase("chrome")){
 				System.out.println("Browser Name is:"+BrowserName);

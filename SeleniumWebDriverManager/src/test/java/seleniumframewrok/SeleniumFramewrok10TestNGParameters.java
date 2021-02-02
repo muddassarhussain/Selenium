@@ -63,7 +63,7 @@ public class SeleniumFramewrok10TestNGParameters{
 		}
 		
 		@Parameters({"BrowserNamelist"})
-		@Test(priority = -1)
+		@Testtilemountain(priority = -1)
 		public void Test1(@Optional("chrome") String BrowserName) {
 			System.out.println("Name is:" +BrowserName);
 			if(BrowserName.equalsIgnoreCase("chrome")){

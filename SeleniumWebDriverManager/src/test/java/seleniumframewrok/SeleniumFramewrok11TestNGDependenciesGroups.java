@@ -39,7 +39,7 @@ public class SeleniumFramewrok11TestNGDependenciesGroups{
 			
 		}
 		
-		@Test(dependsOnGroups = "smoke", dependsOnMethods = "Test3", priority = 10)
+		@Testtilemountain(dependsOnGroups = "smoke", dependsOnMethods = "Test3", priority = 10)
 		public void Test1() { 
 			chrome.get("https://www.google.com");
 			chrome.findElement(By.name( "q")).sendKeys("Automation");
@@ -50,7 +50,7 @@ public class SeleniumFramewrok11TestNGDependenciesGroups{
 			}
 		}
 		
-		@Test(groups = "smoke", priority = 3)
+		@Testtilemountain(groups = "smoke", priority = 3)
 		public void Test2() {
 			chrome.get("https://www.google.com");
 			chrome.findElement(By.name( "q")).sendKeys("Automation using java");
@@ -61,7 +61,7 @@ public class SeleniumFramewrok11TestNGDependenciesGroups{
 			}
 		}
 		
-		@Test(priority = 2)
+		@Testtilemountain(priority = 2)
 		public void Test3() {
 			chrome.get("https://www.google.com");
 			chrome.findElement(By.name( "q")).sendKeys("Automation using JS");

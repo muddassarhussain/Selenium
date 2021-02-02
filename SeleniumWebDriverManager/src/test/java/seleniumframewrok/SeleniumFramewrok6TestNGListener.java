@@ -57,7 +57,7 @@ public class SeleniumFramewrok6TestNGListener{
 			
 		}
 		
-		@Test
+		@Testtilemountain
 		public void Test1() {
 			chrome.get("https://www.google.com");
 		//  test.info("Starting a test-2");
@@ -75,7 +75,7 @@ public class SeleniumFramewrok6TestNGListener{
 			}
 		}
 		
-		@Test
+		@Testtilemountain
 		public void Test2() {
 			chrome.get("https://www.google.com");
 	        test.pass("Navigated to Chrome");
@@ -92,7 +92,7 @@ public class SeleniumFramewrok6TestNGListener{
 			}
 		}
 		
-		@Test
+		@Testtilemountain
 		public void Test3() {
 			chrome.get("https://www.google.com");
 	        test.pass("Navigated to Chrome");
