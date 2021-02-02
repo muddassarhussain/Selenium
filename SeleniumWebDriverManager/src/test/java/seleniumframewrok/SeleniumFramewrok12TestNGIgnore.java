@@ -38,7 +38,7 @@ public class SeleniumFramewrok12TestNGIgnore{
 			
 		}
 		@Ignore //this Ignore will ignore this test and run all other test cases
-		@Testtilemountain(priority = 1)
+		@Test(priority = 1)
 		public void Test1() { 
 			chrome.get("https://www.google.com");
 			chrome.findElement(By.name( "q")).sendKeys("Automation");
@@ -49,7 +49,7 @@ public class SeleniumFramewrok12TestNGIgnore{
 			}
 		}
 		
-		@Testtilemountain(priority = 2)
+		@Test(priority = 2)
 		public void Test2() { 
 			chrome.get("https://www.google.com");
 			chrome.findElement(By.name( "q")).sendKeys("Automation using java");
@@ -60,7 +60,7 @@ public class SeleniumFramewrok12TestNGIgnore{
 			}
 		}
 		
-		@Testtilemountain(priority = 0)
+		@Test(priority = 0)
 		public void Test3() {
 			chrome.get("https://www.google.com");
 			chrome.findElement(By.name( "q")).sendKeys("Automation using JS");
