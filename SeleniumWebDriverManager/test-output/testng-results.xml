@@ -2,38 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-02T17:38:30 PKT" name="Default suite" finished-at="2021-02-02T17:38:46 PKT" duration-ms="15484">
+  <suite started-at="2021-02-02T20:03:27 PKT" name="Default suite" finished-at="2021-02-02T20:03:55 PKT" duration-ms="28406">
     <groups>
     </groups>
-    <test started-at="2021-02-02T17:38:30 PKT" name="Default test" finished-at="2021-02-02T17:38:46 PKT" duration-ms="15484">
-      <class name="seleniumframewrok.Testtilemountain">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.Testtilemountain@3c9754d8]" started-at="2021-02-02T17:38:30 PKT" name="setUp" finished-at="2021-02-02T17:38:32 PKT" duration-ms="2148" status="PASS">
+    <test started-at="2021-02-02T20:03:27 PKT" name="Default test" finished-at="2021-02-02T20:03:55 PKT" duration-ms="28406">
+      <class name="seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@3c9754d8]" started-at="2021-02-02T20:03:27 PKT" name="setUp" finished-at="2021-02-02T20:03:29 PKT" duration-ms="1959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSeleniumFramewrok13TestNGRecorderTileMountain()[pri:0, instance:seleniumframewrok.Testtilemountain@3c9754d8]" started-at="2021-02-02T17:38:32 PKT" name="testSeleniumFramewrok13TestNGRecorderTileMountain" finished-at="2021-02-02T17:38:40 PKT" duration-ms="7612" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="testTileMountainHomeToCheckout()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@3c9754d8]" started-at="2021-02-02T20:03:29 PKT" name="testTileMountainHomeToCheckout" finished-at="2021-02-02T20:03:50 PKT" duration-ms="20721" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[contains(@src,'http://vue.bathroommountain.co.uk/img/400/400/resize/catalog/category/72021-L.jpg')]"}
+              <![CDATA[element click intercepted: Element <label data-v-b0399c5a="" for="sendToShippingAddressCheckbox" class="pl35 lh30 h4 pointer">...</label> is not clickable at point (466, 10). Other element would receive the click: <div class="col-xs-2 col-md-12 center-xs" data-v-4dd8e47d="">...</div>
   (Session info: chrome=88.0.4324.104)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
 System info: host: 'MUDDASSAR-HUSSA', ip: '192.168.1.121', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ccf87d36e236725941f161d5dabeec1d
-*** Element info: {Using=xpath, value=//img[contains(@src,'http://vue.bathroommountain.co.uk/img/400/400/resize/catalog/category/72021-L.jpg')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 46a71af1cf27ea0fae0ed62f5deda64d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[contains(@src,'http://vue.bathroommountain.co.uk/img/400/400/resize/catalog/category/72021-L.jpg')]"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label data-v-b0399c5a="" for="sendToShippingAddressCheckbox" class="pl35 lh30 h4 pointer">...</label> is not clickable at point (466, 10). Other element would receive the click: <div class="col-xs-2 col-md-12 center-xs" data-v-4dd8e47d="">...</div>
   (Session info: chrome=88.0.4324.104)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
 System info: host: 'MUDDASSAR-HUSSA', ip: '192.168.1.121', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ccf87d36e236725941f161d5dabeec1d
-*** Element info: {Using=xpath, value=//img[contains(@src,'http://vue.bathroommountain.co.uk/img/400/400/resize/catalog/category/72021-L.jpg')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 46a71af1cf27ea0fae0ed62f5deda64d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,10 +41,9 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
-at seleniumframewrok.Testtilemountain.testSeleniumFramewrok13TestNGRecorderTileMountain(Testtilemountain.java:26)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+at seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain.testTileMountainHomeToCheckout(SeleniumFramewrok13TestNGRecorderTileMountain.java:56)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,15 +74,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSeleniumFramewrok13TestNGRecorderTileMountain -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.Testtilemountain@3c9754d8]" started-at="2021-02-02T17:38:40 PKT" name="tearDown" finished-at="2021-02-02T17:38:46 PKT" duration-ms="5687" status="PASS">
+        </test-method> <!-- testTileMountainHomeToCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain@3c9754d8]" started-at="2021-02-02T20:03:50 PKT" name="tearDown" finished-at="2021-02-02T20:03:55 PKT" duration-ms="5702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- seleniumframewrok.Testtilemountain -->
+      </class> <!-- seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

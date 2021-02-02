@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumframewrok.Testtilemountain">
+      <class name="seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testSeleniumFramewrok13TestNGRecorderTileMountain"/>
+          <include name="tearDown"/>
+          <include name="testTileMountainHomeToCheckout"/>
         </methods>
-      </class> <!-- seleniumframewrok.Testtilemountain -->
+      </class> <!-- seleniumframewrok.SeleniumFramewrok13TestNGRecorderTileMountain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -53,8 +53,9 @@ public class SeleniumFramewrok13TestNGRecorderTileMountain {
     driver.findElement(By.name("phone-number")).sendKeys("135156542");
     driver.findElement(By.xpath("//div[@id='checkout']/div[3]/div/div/div[3]/div[3]/div/form/div[14]/div/div/div/div/div[2]/div[27]/div/div/span")).click();
     driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-    driver.findElement(By.id("sendToShippingAddressCheckbox")).click();
-//    driver.findElement(By.xpath("//div[@id='checkout']/div[3]/div/div/div[4]/div[3]/div/div[2]/div[3]/label")).click();
+    driver.findElement(By.xpath("//div[@id='checkout']/div[3]/div/div/div[4]/div[3]/div/div[2]/form/div/div/label")).click();
+//    driver.findElement(By.id("sendToShippingAddressCheckbox")).click();
+    driver.findElement(By.xpath("//*[@id='checkout']/div[3]/div/div[1]/div[4]/div[3]/div/div[2]/form/div[1]/div[1]/label")).click();
     // ERROR: Caught exception [ERROR: Unsupported command [selectFrame | index=2 | ]]
     driver.findElement(By.id("checkout-frames-card-number")).click();
     driver.findElement(By.id("checkout-frames-card-number")).clear();
