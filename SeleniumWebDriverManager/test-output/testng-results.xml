@@ -2,37 +2,37 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-03T22:38:57 PKT" name="Default suite" finished-at="2021-02-03T22:39:38 PKT" duration-ms="41064">
+  <suite started-at="2021-02-05T16:47:32 PKT" name="Default suite" finished-at="2021-02-05T16:48:01 PKT" duration-ms="28845">
     <groups>
     </groups>
-    <test started-at="2021-02-03T22:38:57 PKT" name="Default test" finished-at="2021-02-03T22:39:38 PKT" duration-ms="41064">
+    <test started-at="2021-02-05T16:47:32 PKT" name="Default test" finished-at="2021-02-05T16:48:01 PKT" duration-ms="28845">
       <class name="seleniumframewrok.SeleniumFramewrok14TestNGWait">
-        <test-method is-config="true" signature="creatingobj()[pri:0, instance:seleniumframewrok.SeleniumFramewrok14TestNGWait@1a677343]" started-at="2021-02-03T22:38:57 PKT" name="creatingobj" finished-at="2021-02-03T22:39:05 PKT" duration-ms="8079" status="PASS">
+        <test-method is-config="true" signature="creatingobj()[pri:0, instance:seleniumframewrok.SeleniumFramewrok14TestNGWait@4116aac9]" started-at="2021-02-05T16:47:32 PKT" name="creatingobj" finished-at="2021-02-05T16:47:34 PKT" duration-ms="2172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatingobj -->
-        <test-method signature="Test1()[pri:0, instance:seleniumframewrok.SeleniumFramewrok14TestNGWait@1a677343]" started-at="2021-02-03T22:39:05 PKT" name="Test1" finished-at="2021-02-03T22:39:33 PKT" duration-ms="27516" status="FAIL">
+        <test-method signature="Test1()[pri:0, instance:seleniumframewrok.SeleniumFramewrok14TestNGWait@4116aac9]" started-at="2021-02-05T16:47:34 PKT" name="Test1" finished-at="2021-02-05T16:47:56 PKT" duration-ms="21488" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='abcd']"}
-  (Session info: chrome=88.0.4324.104)
+  (Session info: chrome=88.0.4324.146)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'MUDDASSAR-HUSSA', ip: '172.16.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\rocok\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e728736cd8859236cbf6c972af5ac0e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53688}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d78921597a3ac3eaa044bc25338c9a1
 *** Element info: {Using=name, value=abcd}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='abcd']"}
-  (Session info: chrome=88.0.4324.104)
+  (Session info: chrome=88.0.4324.146)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'MUDDASSAR-HUSSA', ip: '172.16.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\rocok\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e728736cd8859236cbf6c972af5ac0e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53688}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d78921597a3ac3eaa044bc25338c9a1
 *** Element info: {Using=name, value=abcd}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -83,7 +83,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="endftest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok14TestNGWait@1a677343]" started-at="2021-02-03T22:39:33 PKT" name="endftest" finished-at="2021-02-03T22:39:38 PKT" duration-ms="5329" status="PASS">
+        <test-method is-config="true" signature="endftest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok14TestNGWait@4116aac9]" started-at="2021-02-05T16:47:56 PKT" name="endftest" finished-at="2021-02-05T16:48:01 PKT" duration-ms="5146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endftest -->
