@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumframewrok.SeleniumFramewrok14TestNGWait">
+      <class name="seleniumframewrok.SeleniumFramewrok15TestNGFluentWait">
         <methods>
-          <include name="creatingobj"/>
           <include name="Test1"/>
           <include name="endftest"/>
+          <include name="creatingobj"/>
         </methods>
-      </class> <!-- seleniumframewrok.SeleniumFramewrok14TestNGWait -->
+      </class> <!-- seleniumframewrok.SeleniumFramewrok15TestNGFluentWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
