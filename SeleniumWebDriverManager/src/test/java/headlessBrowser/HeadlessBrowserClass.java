@@ -14,7 +14,7 @@ public class HeadlessBrowserClass {
 		
 		//HtmlUnitDriver-Headless Browser
 		HtmlUnitDriver driver=new HtmlUnitDriver(BrowserVersion.FIREFOX_3);
-		
+
 		driver.get("https://mvnrepository.com/artifact/org.seleniumhq.webdriver/webdriver-htmlunit/0.9.7376");
 		System.out.println("Title is:"+driver.getTitle());
 		driver.close();
