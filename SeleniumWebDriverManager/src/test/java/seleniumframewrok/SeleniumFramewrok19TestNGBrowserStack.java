@@ -6,6 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.net.*;
 
@@ -14,25 +18,26 @@ import java.net.*;
  */
 
 // @Ignore
-public class SeleniumFramewrok18TestNGSauceLabs{
+public class SeleniumFramewrok19TestNGBrowserStack{
 	
-//	public static WebDriver driver=null;
-	public static String SAUCE_USERNAME="muddassarhussain";
-	public static String SAUCE_ACCESS_KEY="e137dd3d-77d6-40a1-8285-c3815a755e46";
-	public static final String URL = "https://" + SAUCE_USERNAME + ":" + SAUCE_ACCESS_KEY + "@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
+	public static WebDriver driver=null;
+	public static final String USERNAME = "muddassarhussain2";
+	public static final String AUTOMATE_KEY = "p6nrtBKDHYhaWxAxonuW";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 			
 	/*-----------------------------------Main Method-----------------------------------*/
 
 	//While running our test in TestNG framework, we do not need Main Method. so we comment it.
 
 	/*-----------------------------Chrome Code Start Here-----------------------------*/
-	public static void main(String[] args) throws IOException{
-		
+//	public static void main(String[] args) throws IOException{
+		@BeforeTest
+		public void start() throws IOException {
 		DesiredCapabilities caps = new DesiredCapabilities();
         
 		caps.setCapability("os", "Windows");
 		caps.setCapability("os_version", "10");
-		caps.setCapability("browser", "Firefox");
+		caps.setCapability("browser", "Chrome");
 		caps.setCapability("browser_version", "80");
 		caps.setCapability("name", "muddassarhussain2's First Test");
 		
@@ -43,14 +48,20 @@ public class SeleniumFramewrok18TestNGSauceLabs{
 //		WebDriverManager.chromedriver().setup();
 //		WebDriver driv=new ChromeDriver();
 //		
-	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-
+		driver = new RemoteWebDriver(new URL(URL), caps);
+	}
+		@Test
+		public void test() {
 //	    Write your test here
 	    
 	    driver.get("https://google.com");
 	    driver.manage().window().maximize();
 	    driver.findElement(By.name( "q")).sendKeys("SauceLabs Selenium Scripts");
 	    driver.findElement(By.name("btnK")).submit(); 
+	    
+		}
+		@AfterTest
+		public void end() {
 	    driver.quit();	 	
 
     /*5th Automation TestNG+SauceLabs Code Ends Here*/
