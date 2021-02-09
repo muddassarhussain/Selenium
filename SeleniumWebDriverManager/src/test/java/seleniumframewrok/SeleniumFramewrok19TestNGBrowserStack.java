@@ -40,6 +40,7 @@ public class SeleniumFramewrok19TestNGBrowserStack{
 		caps.setCapability("browser", "Chrome");
 		caps.setCapability("browser_version", "80");
 		caps.setCapability("name", "muddassarhussain2's First Test");
+		caps.setCapability("browserstack.networkLogs", "true");
 		
 //		caps.setCapability("platform", "Windows XP");
 //	    caps.setCapability("version", "43.0");

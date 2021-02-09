@@ -32,9 +32,10 @@ public class SeleniumFramewrok18TestNGSauceLabs{
         
 		caps.setCapability("os", "Windows");
 		caps.setCapability("os_version", "10");
-		caps.setCapability("browser", "Firefox");
+		caps.setCapability("browserName", "firefox");
 		caps.setCapability("browser_version", "80");
-		caps.setCapability("name", "muddassarhussain2's First Test");
+		caps.setCapability("name", "SauceLabs First Test");
+		caps.setCapability("extendedDebugging", "true");
 		
 //		caps.setCapability("platform", "Windows XP");
 //	    caps.setCapability("version", "43.0");
