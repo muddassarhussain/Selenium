@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-09T19:01:24 PKT" name="Default suite" finished-at="2021-02-09T19:01:24 PKT" duration-ms="77">
+  <suite started-at="2021-02-11T09:09:16 PKT" name="Default suite" finished-at="2021-02-11T09:09:16 PKT" duration-ms="390">
     <groups>
     </groups>
-    <test started-at="2021-02-09T19:01:24 PKT" name="Default test" finished-at="2021-02-09T19:01:24 PKT" duration-ms="77">
+    <test started-at="2021-02-11T09:09:16 PKT" name="Default test" finished-at="2021-02-11T09:09:16 PKT" duration-ms="390">
       <class name="seleniumframewrok.SeleniumFramewrok20TestNGAppliTool">
-        <test-method is-config="true" signature="setBatch()[pri:0, instance:seleniumframewrok.SeleniumFramewrok20TestNGAppliTool@7dc0f706]" started-at="2021-02-09T19:01:24 PKT" name="setBatch" finished-at="2021-02-09T19:01:24 PKT" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="setBatch()[pri:0, instance:seleniumframewrok.SeleniumFramewrok20TestNGAppliTool@3d34d211]" started-at="2021-02-11T09:09:16 PKT" name="setBatch" finished-at="2021-02-11T09:09:16 PKT" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBatch -->
-        <test-method signature="basicTest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok20TestNGAppliTool@7dc0f706]" started-at="2021-02-09T19:01:24 PKT" name="basicTest" finished-at="2021-02-09T19:01:24 PKT" duration-ms="8" status="FAIL">
+        <test-method signature="basicTest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok20TestNGAppliTool@3d34d211]" started-at="2021-02-11T09:09:16 PKT" name="basicTest" finished-at="2021-02-11T09:09:16 PKT" duration-ms="35" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "com.applitools.eyes.selenium.Eyes.open(org.openqa.selenium.WebDriver, String, String, com.applitools.eyes.RectangleSize)" because "this.eyes" is null]]>
+              <![CDATA[Cannot invoke "com.applitools.eyes.selenium.Eyes.closeAsync()" because "this.eyes" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.applitools.eyes.selenium.Eyes.open(org.openqa.selenium.WebDriver, String, String, com.applitools.eyes.RectangleSize)" because "this.eyes" is null
-at seleniumframewrok.SeleniumFramewrok20TestNGAppliTool.basicTest(SeleniumFramewrok20TestNGAppliTool.java:66)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.applitools.eyes.selenium.Eyes.closeAsync()" because "this.eyes" is null
+at seleniumframewrok.SeleniumFramewrok20TestNGAppliTool.basicTest(SeleniumFramewrok20TestNGAppliTool.java:93)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
