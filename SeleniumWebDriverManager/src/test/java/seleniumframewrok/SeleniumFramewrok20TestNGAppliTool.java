@@ -15,6 +15,9 @@ import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.TestResultsSummary;
 import com.applitools.eyes.selenium.ClassicRunner;
 import com.applitools.eyes.selenium.Eyes;
+import com.applitools.eyes.selenium.Eyes.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /*
  * "Ignore" will ignore all the test inside a class
@@ -23,10 +26,10 @@ import com.applitools.eyes.selenium.Eyes;
 // @Ignore
 public class SeleniumFramewrok20TestNGAppliTool{
 	
-	private EyesRunner runner;
-	private Eyes eyes;
-	private static BatchInfo batch;
-	private WebDriver driver;
+	private EyesRunner runner=null;
+	private Eyes eyes=null;
+	private static BatchInfo batch=null;
+	private WebDriver driver=null;
 
 	@BeforeClass
 	public static void setBatch() {
@@ -36,6 +39,11 @@ public class SeleniumFramewrok20TestNGAppliTool{
 
 	@Before
 	public void beforeEach() {
+		
+		// Use Chrome browser
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		
 		// Initialize the Runner for your test.
 		runner = new ClassicRunner();
 
@@ -48,13 +56,10 @@ public class SeleniumFramewrok20TestNGAppliTool{
 //		}
 
 		// Set your personal Applitols API Key from your environment variables.
-		eyes.setApiKey(System.getenv("UvMlWMPWYdGPryz8xDTykPZy106CGACmJAY280tP105106Bh8110"));
+		eyes.setApiKey("UvMlWMPWYdGPryz8xDTykPZy106CGACmJAY280tP105106Bh8110");
 
 		// set batch name
 		eyes.setBatch(batch);
-
-		// Use Chrome browser
-		driver = new ChromeDriver();
 
 	}
 
@@ -63,7 +68,8 @@ public class SeleniumFramewrok20TestNGAppliTool{
 		// Set AUT's name, test name and viewport size (width X height)
 		// We have set it to 800 x 600 to accommodate various screens. Feel free to
 		// change it.
-		eyes.open(driver, "Demo App", "Smoke Test", new RectangleSize(800, 800));
+		try {
+		eyes.open(driver, "AppliTool First App", "Smoke Test", new RectangleSize(1600, 800));
 
 		// Navigate the browser to the "ACME" demo app.
 		driver.get("https://demo.applitools.com");
@@ -79,13 +85,12 @@ public class SeleniumFramewrok20TestNGAppliTool{
 
 		// Visual checkpoint #2 - Check the app page.
 		eyes.checkWindow("App Window");
-
+			
+		} finally {
+			// TODO: handle finally clause
 		// End the test.
 		eyes.closeAsync();
-	}
-
-	@After
-	public void afterEach() {
+		}
 		// Close the browser.
 		driver.quit();
 
@@ -102,4 +107,5 @@ public class SeleniumFramewrok20TestNGAppliTool{
 
     /*5th Automation TestNG+SauceLabs Code Ends Here*/
 	}
+}
 /*-----------------------------Chrome Code End Here-----------------------------*/
