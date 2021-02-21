@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumframewrok.SeleniumFramewrok20TestNGAppliTool">
+      <class name="seleniumframewrok.VueBathroomSmokeKR">
         <methods>
-          <include name="setBatch"/>
-          <include name="basicTest"/>
+          <include name="testVueBathroomSmokeKR"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- seleniumframewrok.SeleniumFramewrok20TestNGAppliTool -->
+      </class> <!-- seleniumframewrok.VueBathroomSmokeKR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
