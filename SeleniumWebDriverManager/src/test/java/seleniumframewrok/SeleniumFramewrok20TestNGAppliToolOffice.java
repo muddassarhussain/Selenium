@@ -1,49 +1,34 @@
 package seleniumframewrok;
 
-import org.hamcrest.core.IsNull;
-import org.junit.After;
-import org.junit.Before;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import com.applitools.eyes.BatchInfo;
-import com.applitools.eyes.EyesRunner;
-import com.applitools.eyes.RectangleSize;
-import com.applitools.eyes.TestResultsSummary;
+import static com.google.common.base.Strings.isNullOrEmpty;
+import com.applitools.eyes.*;
 import com.applitools.eyes.selenium.ClassicRunner;
 import com.applitools.eyes.selenium.Eyes;
-import com.applitools.eyes.selenium.Eyes.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-/*
- * "Ignore" will ignore all the test inside a class
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+/**
+ * Runs Applitools test for the demo app https://demo.applitools.com
  */
+public class SeleniumFramewrok20TestNGAppliToolOffice {
 
-// @Ignore
-public class SeleniumFramewrok20TestNGAppliTool{
-	
-	private EyesRunner runner=null;
-	private Eyes eyes=null;
-	private static BatchInfo batch=null;
-	private WebDriver driver=null;
+	private EyesRunner runner;
+	private Eyes eyes;
+	private static BatchInfo batch;
+	private WebDriver driver;
 
-	@BeforeClass
-	public static void setBatch() {
-		// Must be before ALL tests (at Class-level)
-		batch = new BatchInfo("AppliTool Test");
-	}
-
-	@Before
+	@BeforeTest
 	public void beforeEach() {
-		
-		// Use Chrome browser
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		
+		// Must be before ALL tests (at Class-level)
+				batch = new BatchInfo("Demo batch");
+				
 		// Initialize the Runner for your test.
 		runner = new ClassicRunner();
 
@@ -51,15 +36,19 @@ public class SeleniumFramewrok20TestNGAppliTool{
 		eyes = new Eyes(runner);
 
 		// Raise an error if no API Key has been found.
-//		if(IsNull<(System.getenv("UvMlWMPWYdGPryz8xDTykPZy106CGACmJAY280tP105106Bh8110"))> ) {
-//		    throw new RuntimeException("No API Key found; Please set environment variable 'APPLITOOLS_API_KEY'.");
-//		}
+		if(isNullOrEmpty(System.getenv("UvMlWMPWYdGPryz8xDTykPZy106CGACmJAY280tP105106Bh8110"))) {
+		    throw new RuntimeException("No API Key found; Please set environment variable 'APPLITOOLS_API_KEY'.");
+		}
 
 		// Set your personal Applitols API Key from your environment variables.
-		eyes.setApiKey("UvMlWMPWYdGPryz8xDTykPZy106CGACmJAY280tP105106Bh8110");
+		eyes.setApiKey(System.getenv("UvMlWMPWYdGPryz8xDTykPZy106CGACmJAY280tP105106Bh8110"));
 
 		// set batch name
 		eyes.setBatch(batch);
+
+		// Use Chrome browser
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 
 	}
 
@@ -68,8 +57,7 @@ public class SeleniumFramewrok20TestNGAppliTool{
 		// Set AUT's name, test name and viewport size (width X height)
 		// We have set it to 800 x 600 to accommodate various screens. Feel free to
 		// change it.
-		try {
-		eyes.open(driver, "AppliTool First App", "Smoke Test", new RectangleSize(1600, 800));
+		eyes.open(driver, "Demo App", "Smoke Test", new RectangleSize(800, 800));
 
 		// Navigate the browser to the "ACME" demo app.
 		driver.get("https://demo.applitools.com");
@@ -85,12 +73,13 @@ public class SeleniumFramewrok20TestNGAppliTool{
 
 		// Visual checkpoint #2 - Check the app page.
 		eyes.checkWindow("App Window");
-			
-		} finally {
-			// TODO: handle finally clause
+
 		// End the test.
 		eyes.closeAsync();
-		}
+	}
+
+	@AfterTest
+	public void afterEach() {
 		// Close the browser.
 		driver.quit();
 
@@ -104,8 +93,4 @@ public class SeleniumFramewrok20TestNGAppliTool{
 		// Print results
 		System.out.println(allTestResults);
 	}
-
-    /*5th Automation TestNG+SauceLabs Code Ends Here*/
-	}
 }
-/*-----------------------------Chrome Code End Here-----------------------------*/

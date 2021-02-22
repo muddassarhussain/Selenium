@@ -2,23 +2,53 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-11T09:09:16 PKT" name="Default suite" finished-at="2021-02-11T09:09:16 PKT" duration-ms="390">
+  <suite started-at="2021-02-22T17:40:35 PKT" name="Default suite" finished-at="2021-02-22T17:40:52 PKT" duration-ms="17361">
     <groups>
     </groups>
-    <test started-at="2021-02-11T09:09:16 PKT" name="Default test" finished-at="2021-02-11T09:09:16 PKT" duration-ms="390">
-      <class name="seleniumframewrok.SeleniumFramewrok20TestNGAppliTool">
-        <test-method is-config="true" signature="setBatch()[pri:0, instance:seleniumframewrok.SeleniumFramewrok20TestNGAppliTool@3d34d211]" started-at="2021-02-11T09:09:16 PKT" name="setBatch" finished-at="2021-02-11T09:09:16 PKT" duration-ms="187" status="PASS">
+    <test started-at="2021-02-22T17:40:35 PKT" name="Default test" finished-at="2021-02-22T17:40:52 PKT" duration-ms="17361">
+      <class name="seleniumframewrok.VueBathroom">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.VueBathroom@2002fc1d]" started-at="2021-02-22T17:40:35 PKT" name="setUp" finished-at="2021-02-22T17:40:37 PKT" duration-ms="2215" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setBatch -->
-        <test-method signature="basicTest()[pri:0, instance:seleniumframewrok.SeleniumFramewrok20TestNGAppliTool@3d34d211]" started-at="2021-02-11T09:09:16 PKT" name="basicTest" finished-at="2021-02-11T09:09:16 PKT" duration-ms="35" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- setUp -->
+        <test-method signature="vueBathroomSmokeClick()[pri:0, instance:seleniumframewrok.VueBathroom@2002fc1d]" started-at="2021-02-22T17:40:37 PKT" name="vueBathroomSmokeClick" finished-at="2021-02-22T17:40:46 PKT" duration-ms="9357" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "com.applitools.eyes.selenium.Eyes.closeAsync()" because "this.eyes" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@text(), 'Antigua Gloss White Combination Vanity Basin And Seattle Toilet 1200mm')]"}
+  (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'MUDDASSAR-HUSSA', ip: '192.168.1.121', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56733}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4fce5e27d304f40dddb1ca7a2c420d4
+*** Element info: {Using=xpath, value=//*[contains(@text(), 'Antigua Gloss White Combination Vanity Basin And Seattle Toilet 1200mm')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.applitools.eyes.selenium.Eyes.closeAsync()" because "this.eyes" is null
-at seleniumframewrok.SeleniumFramewrok20TestNGAppliTool.basicTest(SeleniumFramewrok20TestNGAppliTool.java:93)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@text(), 'Antigua Gloss White Combination Vanity Basin And Seattle Toilet 1200mm')]"}
+  (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'MUDDASSAR-HUSSA', ip: '192.168.1.121', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56733}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4fce5e27d304f40dddb1ca7a2c420d4
+*** Element info: {Using=xpath, value=//*[contains(@text(), 'Antigua Gloss White Combination Vanity Basin And Seattle Toilet 1200mm')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+at seleniumframewrok.VueBathroom.vueBathroomSmokeClick(VueBathroom.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,11 +79,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basicTest -->
-      </class> <!-- seleniumframewrok.SeleniumFramewrok20TestNGAppliTool -->
+        </test-method> <!-- vueBathroomSmokeClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.VueBathroom@2002fc1d]" started-at="2021-02-22T17:40:46 PKT" name="tearDown" finished-at="2021-02-22T17:40:52 PKT" duration-ms="5760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumframewrok.VueBathroom -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
