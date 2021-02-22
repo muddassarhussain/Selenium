@@ -43,12 +43,12 @@ public class SeleniumFramewrok14TestNGWait{
 			chrome.findElement(By.name( "q")).sendKeys("Automation");
 			chrome.findElement(By.name("btnK")).submit();
 			
-			//Implicit wait (stadard frequency of implicit wait is 250 miliseconds)
-			chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			chrome.findElement(By.name("abcd")).submit();
+//			//Implicit wait (stadard frequency of implicit wait is 250 miliseconds)
+//			chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//			chrome.findElement(By.name("abcd")).submit();
 			
 			//Explicit wait 
-			WebDriverWait wait=new WebDriverWait(chrome, 20);
+			WebDriverWait wait=new WebDriverWait(chrome,20);
 			WebElement element=wait.until(ExpectedConditions.elementToBeClickable(By.name("abcdef")));
 			chrome.findElement(By.name("abcd")).submit();
 		}
