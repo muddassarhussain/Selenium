@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumframewrok.VueBathroomSmokeSearchOffice">
+      <class name="seleniumframewrok.VueBathroomSmokeClickOffice">
         <methods>
-          <include name="tearDown"/>
+          <include name="vueBathroomSmokeClick"/>
           <include name="setUp"/>
-          <include name="vueBathroomSmokeSearch"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- seleniumframewrok.VueBathroomSmokeSearchOffice -->
+      </class> <!-- seleniumframewrok.VueBathroomSmokeClickOffice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
