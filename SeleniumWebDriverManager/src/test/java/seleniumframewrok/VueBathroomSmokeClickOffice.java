@@ -1,21 +1,25 @@
 package seleniumframewrok;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
-import java.util.concurrent.TimeUnit;
 
 
 public class VueBathroomSmokeClickOffice {
 	private WebDriver driver;
+	public String Title="";
+	
 
 	@BeforeTest
 	public void setUp() {
@@ -28,8 +32,19 @@ public class VueBathroomSmokeClickOffice {
 		driver.manage().window().maximize();
 //		driver.manage().window().setSize(new Dimension(1936, 1056));
 		driver.get("http://vue.bathroommountain.co.uk");
+		Thread.sleep(2000);
+		driver.navigate().refresh();
 		Thread.sleep(1000);
-		WebElement element = driver.findElement(By.cssSelector(".familiar-brands"));
+		Title=driver.getTitle();
+		String expectedTitle=Title;
+		if(Title.contentEquals(expectedTitle)) {
+			System.out.println("Title is fine");
+		}else
+		{
+			System.out.println("Title isn't fine");
+		}
+		
+		driver.findElement(By.cssSelector(".familiar-brands"));
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector(".brand-detail:nth-child(2) h3")).click();
 		Thread.sleep(5000);
@@ -54,6 +69,7 @@ public class VueBathroomSmokeClickOffice {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.linkText("Go to Checkout")).click();
 		Thread.sleep(2000);
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.name("first-name")).click();
 		driver.findElement(By.name("first-name")).sendKeys("Muddassar");
@@ -85,6 +101,7 @@ public class VueBathroomSmokeClickOffice {
 		}
 		driver.findElement(By.cssSelector(".id-2021-02-26 .vc-day-content")).click();
 		Thread.sleep(2000);
+		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".col-md-5 > .no-outline")).click();
 		Thread.sleep(2000);
@@ -99,12 +116,14 @@ public class VueBathroomSmokeClickOffice {
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.elementToBeClickable(By.id("checkout-frames-card-number")));
 		}
-		driver.findElement(By.id("checkout-frames-card-number")).click();
+		driver.findElement(By.className("card-number")).click();
+//		driver.findElement(By.id("checkout-frames-card-number")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("checkout-frames-card-number")).sendKeys("4242 4242 4242 4242");
+		driver.findElement(By.className("card-number")).sendKeys("4242 4242 4242 4242");
+//		driver.findElement(By.id("checkout-frames-card-number")).sendKeys("4242 4242 4242 4242");
 		Thread.sleep(1000);
-		driver.switchTo().defaultContent();
-		driver.switchTo().frame(3);
+//		driver.switchTo().defaultContent();
+//		driver.switchTo().frame(3);
 		driver.findElement(By.id("checkout-frames-expiry-date")).sendKeys("12/25");
 		Thread.sleep(1000);
 		driver.switchTo().defaultContent();
