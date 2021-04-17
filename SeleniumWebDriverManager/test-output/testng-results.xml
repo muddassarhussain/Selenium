@@ -2,34 +2,63 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-02-21T18:52:01 PKT" name="Default suite" finished-at="2021-02-21T18:52:30 PKT" duration-ms="29329">
+=======
+  <suite started-at="2021-02-24T18:02:42 PKT" name="Default suite" finished-at="2021-02-24T18:03:34 PKT" duration-ms="52100">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-02-21T18:52:01 PKT" name="Default test" finished-at="2021-02-21T18:52:30 PKT" duration-ms="29329">
       <class name="seleniumframewrok.VueBathroomSmokeKR">
         <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.VueBathroomSmokeKR@69453e37]" started-at="2021-02-21T18:52:01 PKT" name="setUp" finished-at="2021-02-21T18:52:08 PKT" duration-ms="7400" status="PASS">
+=======
+    <test started-at="2021-02-24T18:02:42 PKT" name="Default test" finished-at="2021-02-24T18:03:34 PKT" duration-ms="52100">
+      <class name="seleniumframewrok.Test1">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumframewrok.Test1@2002fc1d]" started-at="2021-02-24T18:02:42 PKT" name="setUp" finished-at="2021-02-24T18:02:44 PKT" duration-ms="2220" status="PASS">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< HEAD
         <test-method signature="testVueBathroomSmokeKR()[pri:0, instance:seleniumframewrok.VueBathroomSmokeKR@69453e37]" started-at="2021-02-21T18:52:08 PKT" name="testVueBathroomSmokeKR" finished-at="2021-02-21T18:52:29 PKT" duration-ms="20291" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
+=======
+        <test-method signature="vueBathroomSmokeClick()[pri:0, instance:seleniumframewrok.Test1@2002fc1d]" started-at="2021-02-24T18:02:44 PKT" name="vueBathroomSmokeClick" finished-at="2021-02-24T18:03:23 PKT" duration-ms="39143" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
             <message>
-              <![CDATA[element click intercepted: Element <div class="heading">...</div> is not clickable at point (874, 553). Other element would receive the click: <p id="zsiq_byline" class="zsiq_ellips" title="...">Leave a message</p>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#checkout\-frames\-card\-number"}
   (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'MUDDASSAR-HUSSA', ip: '172.16.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\rocok\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50290}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: 6795dc9bb67dfef904b4e5646a1b6651]]>
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c22640c45ad063b3a927f47ab255360
+*** Element info: {Using=id, value=checkout-frames-card-number}]]>
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="heading">...</div> is not clickable at point (874, 553). Other element would receive the click: <p id="zsiq_byline" class="zsiq_ellips" title="...">Leave a message</p>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#checkout\-frames\-card\-number"}
   (Session info: chrome=88.0.4324.182)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-9LQ664D', ip: '192.168.10.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: host: 'MUDDASSAR-HUSSA', ip: '172.16.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\rocok\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50290}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: 6795dc9bb67dfef904b4e5646a1b6651
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\MUDDAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c22640c45ad063b3a927f47ab255360
+*** Element info: {Using=id, value=checkout-frames-card-number}
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,9 +70,10 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-at seleniumframewrok.VueBathroomSmokeKR.testVueBathroomSmokeKR(VueBathroomSmokeKR.java:30)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+at org.openqa.selenium.By$ById.findElement(By.java:193)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+at seleniumframewrok.Test1.vueBathroomSmokeClick(Test1.java:87)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,15 +104,20 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testVueBathroomSmokeKR -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.VueBathroomSmokeKR@69453e37]" started-at="2021-02-21T18:52:29 PKT" name="tearDown" finished-at="2021-02-21T18:52:30 PKT" duration-ms="1513" status="PASS">
+=======
+        </test-method> <!-- vueBathroomSmokeClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumframewrok.Test1@2002fc1d]" started-at="2021-02-24T18:03:23 PKT" name="tearDown" finished-at="2021-02-24T18:03:34 PKT" duration-ms="10700" status="PASS">
+>>>>>>> branch 'master' of https://github.com/muddassarhussain/Selenium.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- seleniumframewrok.VueBathroomSmokeKR -->
+      </class> <!-- seleniumframewrok.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

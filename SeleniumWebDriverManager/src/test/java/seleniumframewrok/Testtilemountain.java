@@ -24,7 +24,7 @@ public class Testtilemountain{
     driver.get("http://vue.bathroommountain.co.uk/");
     driver.findElement(By.xpath("//div[@id='home']/div[3]/div/div/a[2]/div")).click();
 //    driver.findElement(By.xpath("//img[contains(@src,'http://vue.bathroommountain.co.uk/img/400/400/resize/catalog/category/72021-L.jpg')]")).click();
-//    driver.findElement(By.xpath("(//img[@alt='Monaco Slate Grey Floor Standing Tall Cabinet Unit 300mm'])[3]")).click();
+    driver.findElement(By.xpath("(//img[@alt='Monaco Slate Grey Floor Standing Tall Cabinet Unit 300mm'])[3]")).click();
 //    driver.findElement(By.className("addtocart-popup")).click();
 //    driver.findElement(By.xpath("//div[@id='pupupid']/div/div[2]/div/div/div/div[2]/div[2]/div/button")).click();
 //    driver.findElement(By.xpath("//div[@id='viewport']/div/header/div[2]/div/div[5]/div/button[2]/div/div[2]/span")).click();
