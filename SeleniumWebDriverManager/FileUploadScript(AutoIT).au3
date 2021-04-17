@@ -1,0 +1,5 @@
+ControlFocus("Open", "", "Edit1")
+Sleep(4000)
+ControlSetText("Open", "", "Edit1", "C:\Users\rocok\git\repository\SeleniumWebDriverManager\autoit.txt")
+Sleep(5000)
+ControlClick("Open", "", "Button1")
