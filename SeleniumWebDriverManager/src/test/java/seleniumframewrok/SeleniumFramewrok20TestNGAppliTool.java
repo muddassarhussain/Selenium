@@ -1,7 +1,5 @@
 package seleniumframewrok;
 
-import org.hamcrest.core.IsNull;
-import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -107,5 +105,4 @@ public class SeleniumFramewrok20TestNGAppliTool{
 
     /*5th Automation TestNG+SauceLabs Code Ends Here*/
 	}
-}
 /*-----------------------------Chrome Code End Here-----------------------------*/
